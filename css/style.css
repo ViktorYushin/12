@@ -248,11 +248,15 @@ input[type=search] {
 } */
 .imgCenter_bg{
     display: flex;
-    width: 565px;
-    height: 565px;
+    min-width: 220px;
+    min-height: 220px;
     background: #fff;
     justify-content:center;
     align-items:center;
+}
+.imgCenter_bg img{
+    min-width: 220px;
+    min-height: 220px;
 }
 .center_column{
     display: flex;
@@ -817,4 +821,115 @@ hr{
     .tabs a:last-child{
         padding: 10px 0 0 0;
     }
+    .product_img img{
+        width: 238px ;
+    }
+    .header_input{
+        display: none;
+    }
+    .header_lk{
+        display: none;
+    }
+    .contant_menu{
+        display: none;
+    }
+    .contant_row_imgLeft{
+        margin: 10px 0;
+        display: flex;
+        flex-direction: column;
+        height: 160px;
+    }
+    /* .contant_body{
+        height: 1200px;
+    } */
+    .contant_row_imgCenter{
+        /* display: flex; */
+        flex-direction: column;
+        justify-content: start;
+        margin: 40px 0;
+        height: 250px;
+    }
+    .imgLeft_top{
+        display: flex;
+        justify-content: space-around;
+    }
+    .imgLeft_end{
+        display: flex;
+        justify-content: space-around;
+    }
+    .imgCenter_row{
+        display: flex;
+        justify-content: center;
+        min-width: 220px;
+        height: 220px;
+    }
+    .imgCenter_bg{
+        display: flex;
+        min-width: 220px;
+        min-height: 220px;
+        justify-content:center;
+        align-items:center;
+    }
+    
+    .imgCenter_bg img{
+        display: flex;
+        min-width: 220px;
+        height: 220px;
+    }
+    .center_column{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: center;
+        min-width: 280px;
+        margin: 20px 0 0 0 ;
+    }
+    .column{
+        display: flex;
+        flex-direction: column;
+    }
+    .column_img{
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        height: 50px;
+    }
+    .column_img2{
+        left: 15px;
+        top: 8px;
+    }
+    .column_title{
+        align-self: center;
+        height: 34px;
+    }
+    .column_text{
+        align-self: center;
+        height: 34px;
+    }
+    .contant_row_price{
+        display: none;
+    }
+
+    /* .title_bg {
+        width: 329px;
+        height: 185px;
+    }
+    .price_bg {
+        width: 329px;
+        height: 185px;
+    }
+    .help_bg {
+        width: 329px;
+        height: 185px;
+    } */
+    .tabs{
+        flex-direction: column;
+    }
+    .tabs a{
+        margin: 10px 0;
+    }
+    .tabs a:last-child{
+        padding: 0;
+    }
 }
+
