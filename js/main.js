@@ -21,7 +21,7 @@ $(document).ready(function(){
         arrows:true,  //показываем стрелки
         dots:true, //показываем точки
         adaptiveHeight:false, //автоматическая настройка высоты слайдера
-        slidesToShow:2, //кол-во отображаемых сладов
+        slidesToShow:1, //кол-во отображаемых сладов
         slidesToScroll: 2, //кол-во переключаемых сладов
         speed: 200, //скорость перелистывания
         easing:'ease', //изменяет прелистывание
@@ -40,7 +40,15 @@ $(document).ready(function(){
             {
                 breakpoint:900,
                  settings:{
-                    centermode:true,
+                    slidesToShow:4
+                }   
+                
+                
+            }
+        ],responsive:[
+            {
+                breakpoint:580,
+                 settings:{
                     slidesToShow:2
                 }   
                 
