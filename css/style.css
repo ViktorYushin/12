@@ -189,6 +189,7 @@ input[type=search] {
 }
 .contant_body{
     display: flex;
+    justify-content: space-between;
     padding: 0 0 84px 0;
     height: 100%;
 }
@@ -197,6 +198,7 @@ input[type=search] {
     flex-direction: column;
     justify-content: space-between;
     height: 565px;
+    margin: 0 30px 0 0;
 }
 .imgLeft{
     display: flex;
@@ -240,8 +242,12 @@ input[type=search] {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 0 auto;
-    height: 650px;
+    min-width: 50%;
+    height: auto;
+}
+.imgCenter_row{
+    min-height: 220px;
+    width: auto;
 }
 /* .contant_row_imgCenter{
     display: flex;
@@ -249,7 +255,7 @@ input[type=search] {
 .imgCenter_bg{
     display: flex;
     min-width: 220px;
-    min-height: 220px;
+    height: auto;
     background: #fff;
     justify-content:center;
     align-items:center;
@@ -268,15 +274,12 @@ input[type=search] {
 }
 .column_img{
     position: relative;
+    display: flex;
 }
 .column_img2{
     position: absolute;
     left: 14px;
     top: 12px;
-}
-.column_img{
-    display: flex;
-    
 }
 .column_body{
     padding: 0 0 0 10px;
@@ -293,16 +296,17 @@ input[type=search] {
 .contant_row_price{
     margin: 0 0 0 40px;
     height: 100%;
+    min-width: 227px;
 }
 .title_bg{
-    width: 467px;
-    height: 241px;
+    max-width: 467px;
+    min-height: 241px;
     background: #FFFFFF;
 }
 .title_body{
     margin: 0 auto;
-    width: 350px;
-    padding: 45px 0;
+    max-width: 350px;
+    padding: 45px 10px 45px 10px;
 }
 .title_art{
     font-family: Gilroy;
@@ -323,14 +327,14 @@ input[type=search] {
     color: #B3BDC3;
 }
 .price_bg{
-    width: 467px;
-    height: 241px;
+    max-width: 467px;
+    min-height: 241px;
     background: #e9f5ff;
 }
 .price_body{
     margin: 0 auto;
-    width: 350px;
-    padding: 45px 0;
+    max-width: 350px;
+    padding: 45px 10px 45px 10px;
 }
 .price_price{
     font-family: Gilroy;
@@ -390,14 +394,14 @@ input[type=search] {
 }
 
 .help_bg{
-    width: 467px;
-    height: 183px;
+    max-width: 467px;
+    min-height: 183px;
     background: #fff;
 }
 .help_body{
     margin: 0 auto;
-    width: 350px;
-    padding: 34px 0 ;
+    max-width: 350px;
+    padding: 34px 10px 34px 10px ;
 }
 .help_text{
     font-size: 23.4px;
@@ -409,6 +413,7 @@ input[type=search] {
 }
 .coll{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 .coll_input{
@@ -469,6 +474,7 @@ input[type=search] {
 .visible{
     display: block;
 }
+
 .recommendation{
     display: flex;
     flex-direction: column;
@@ -763,9 +769,6 @@ hr{
     .description{
         margin: 0 0 0 15px;
     }
-    .imgCenter_bg{
-        background: #2D5066; 
-    }
     .contant_row_imgLeft{
         /* display: none; */
         display: inline-flex;
@@ -789,8 +792,8 @@ hr{
     }
     .contant_row_imgCenter{
         display: inline-flex;
-        margin: 80px auto 0;
-        height: 1250px;
+        margin: 40px auto 0;
+        height: 1450px;
     }
     footer{
         display: none;
@@ -798,15 +801,16 @@ hr{
     .contant_body{
         display: flex;
         flex-direction: column;
-        height: 1400px;
+        height: 1500px;
     }
     .imgCenter_bg{
         display: flex;
-        max-width: 489px;
-        max-height: 489px;
+        min-width: 489px;
+        min-height: 489px;
         background: #fff;
         justify-content:center;
         align-items:center;
+        margin: 0 0 40px 0;
     }
     .center_column{
         display: flex;
@@ -847,7 +851,12 @@ hr{
         flex-direction: column;
         justify-content: start;
         margin: 40px 0;
-        height: 250px;
+        height: 360px;
+    }
+    .contant_body{
+        display: flex;
+        flex-direction: column;
+        height: 1500px;
     }
     .imgLeft_top{
         display: flex;
@@ -906,22 +915,66 @@ hr{
         align-self: center;
         height: 34px;
     }
-    .contant_row_price{
+    /* .contant_row_price{
         display: none;
+    } */
+    .contant_row_price{
+        width: 300px;
+        margin: 0;
     }
-
-    /* .title_bg {
-        width: 329px;
-        height: 185px;
+    .title_bg {
+        width: 290px;
+        height: 245px;
+    }
+    .title_body{
+        margin: 0 auto;
+        width: 260px;
+        padding: 45px 0;
+    }
+    .title_art{
+        font-family: Gilroy;
+        font-size: 13px;
+        line-height: 24px;
+        color: #B3BDC3;
+    }
+    .title_title{
+        font-family: Gilroy;
+        font-size: 36px;
+        line-height: 42px;
+        color: #000000;
+    }
+    .rtitle_brand{
+        font-family: Gilroy;
+        font-size: 13px;
+        line-height: 24px;
+        color: #B3BDC3;
     }
     .price_bg {
-        width: 329px;
-        height: 185px;
+        width: 290px;
+        height: 290px;
+    }
+    .price_body{
+        margin: 0 auto;
+        width: 260px;
+        padding: 45px 0;
     }
     .help_bg {
-        width: 329px;
-        height: 185px;
-    } */
+        width: 290px;
+        height: 270px;
+    }
+    .help_body{
+        margin: 0 auto;
+        width: 260px;
+        padding: 34px 0 ;
+    }
+    .coll{
+        display: flex;
+        flex-direction: column;
+    }
+    .coll_btn{
+        margin: 20px 0 0 0;
+    }
+    
     .tabs{
         flex-direction: column;
     }
@@ -932,4 +985,3 @@ hr{
         padding: 0;
     }
 }
-
