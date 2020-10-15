@@ -480,7 +480,7 @@ input[type=search] {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 20px 20px 120px 20px;
+    padding: 20px 20px 20px 20px;
 }
 .recommendation_title{
     font-family: Gilroy;
@@ -645,7 +645,9 @@ hr{
 }
 .footer{
     display: flex;
-    padding: 60px 0;
+    justify-content: space-between;
+    padding: 60px 15px;
+
 }
 .nav{
     display: flex;
@@ -672,37 +674,50 @@ hr{
     line-height: 31px;
     color: #000000;
 }
-.footer_catalog{
+
+/* .footer_catalog{
     margin: 0 0 0 70px;
-}
-.catalog_row{
+} */
+.footer_catalog{
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    margin: 0 0 0 70px;
+    flex-wrap: wrap;
+    height: 300px;
 }
-.addres{
-
+.footCatalog ul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 300px;
+    width: 250px;
+}
+.link {
+    margin: 0 0 0 10px;
+}
+.link li{
+    margin: 0 10px 0 0;
+}
+/* .addres{
     margin: 0 0 0 200px;
-}
+} */
 .addres_text{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 250px;
+    margin: 0 0 0 10px;
 }
 .mesanger{
     display: flex;
     justify-content: flex-end;
-    min-width: 220px;
+    min-width: 160px;
 }
 .mesanger_row{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 275px;
-    
-    
+    height: 250px;
+    margin: 0 0 0 10px;
 }
 .collMe{
     font-family: Gilroy;
@@ -718,7 +733,7 @@ hr{
     color: #C6A464;
 }
 .mesanger_text{
-    margin: 10px 0 0 0;
+    margin: 5px 0 0 0;
     font-family: Gilroy;
     font-size: 14px;
     line-height: 20px;
@@ -751,7 +766,7 @@ hr{
     }
    
 }
-@media(max-width:740px){
+@media(max-width:767px){
     .header_lk{
         margin: 8px 0 0 40px;
     }
@@ -796,9 +811,95 @@ hr{
         margin: 40px auto 0;
         height: 1450px;
     }
-    footer{
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        padding: 0 15px;
+        height: auto ;
+    }
+    .title{
+        font-size: 19px;
+    }
+    .subtitle {
+        font-size: 18px;
+    }
+    /* Спойлер */
+    .block_title{
+        letter-spacing: 2px;
+        position: relative;
+        padding: 0 0 0 30px;
+    }
+    .title{
+        width: 100%;
+        height: auto;
+        border: 1px solid #C6A464;
+        margin: 10px 0;
+    }
+    .block_title::before,
+    .block_title::after{
+        content: '';
+        width: 10px;
+        height: 2px;
+        background-color: #000;
+        position: absolute;
+        top: 12px;
+        transition: all 0.3s ease 0s;
+    }
+    .block_title::before{
+        transform: rotate(40deg);
+        left: 0;
+    }
+    .block_title::after{
+        transform: rotate(-40deg);
+        left: 7px;
+    }
+    .block_title.active::before,
+    .block_title.active::after{
+        background-color: red;
+    }
+    .block_title.active::before{
+        transform: rotate(-40deg);
+    }
+    .block_title.active::after{
+        transform: rotate(40deg);
+    }
+    .block_link{
         display: none;
     }
+    .nav, .footer_catalog, .addres_row {
+        height: auto;
+        width: 100%;
+    }
+    .footCatalog li{
+        display: flex;
+        flex-direction: row;
+        padding: 0 15px;
+    }
+    .footCatalog ul{
+        height: 320px;
+        width: 100%;
+    }
+    .fg{
+        width: 100%;
+    }
+    .fg .subtitle{
+       line-height: 50px;    
+    }
+    .addres_text .subtitle{
+        margin: 30px 0;
+    }
+    .addres_text .subtitle:first-child{
+        margin: 0 0;
+    }
+    .mesanger_row .mesanger_icon{
+        margin: 40px 0;
+    }
+
+
+
+
+ 
     .contant_body{
         display: flex;
         flex-direction: column;
@@ -832,9 +933,6 @@ hr{
         min-width: 250px;
         padding: 45px 10px;
     }
-
-
-    
 }
 @media(max-width:580px){
     .tabs a:last-child{
@@ -909,12 +1007,13 @@ hr{
     }
     .center_column{
         display: none;
+    }    
         /* flex-direction: row;
         justify-content: space-between;
         text-align: center;
         min-width: 280px;
         margin: 20px 0 0 0 ; */
-    }
+    
     /* .column{
         display: flex;
         flex-direction: column;
@@ -997,7 +1096,6 @@ hr{
     .coll_btn{
         margin: 20px 0 0 0;
     }
-    
     .tabs{
         flex-direction: column;
     }
@@ -1009,5 +1107,15 @@ hr{
     }
     .recommendation{
         padding: 20px;
+    }
+    .footCatalog ul{
+        height: 480px;
+        width: 100%;
+    }
+    .footCatalog li{
+        padding: 0 0 0 0;
+    }
+    .link{
+        margin: 0;
     }
 }
