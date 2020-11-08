@@ -742,6 +742,22 @@ hr{
 .mesanger_icon a {
     margin: 0 5px 0 0;
 }
+
+.footer-href {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 51;
+}
+.href-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    color: #fff;
+    background-color: rgb(0, 0, 0);
+}
+
 @media(max-width:1170px){
     input[type=search] {
         width: 200px;
