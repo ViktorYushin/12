@@ -742,7 +742,9 @@ hr{
 .mesanger_icon a {
     margin: 0 5px 0 0;
 }
-
+.footer-titile {
+    height: 60px;
+}
 .footer-href {
     position: fixed;
     width: 100%;
