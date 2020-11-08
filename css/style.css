@@ -743,7 +743,7 @@ hr{
     margin: 0 5px 0 0;
 }
 .footer-titile {
-    height: 60px;
+    height: 40px;
 }
 .footer-href {
     position: fixed;
@@ -755,7 +755,7 @@ hr{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 40px;
+    height: 60px;
     color: #fff;
     background-color: rgb(0, 0, 0);
 }
